@@ -1,35 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Function to process each element recursively
-    function processElement(element) {
-        // Get the parent node of the current element
-        const parent = element.parentNode;
-        
-        // Create a new element with the same tag name but in lowercase
-        const newElement = document.createElement(element.tagName.toLowerCase());
-
-        // Copy attributes to the new element
-        for (let attr of element.attributes) {
-            newElement.setAttribute(attr.name, attr.value);
-        }
-
-        // Move all child nodes to the new element
-        while (element.firstChild) {
-            newElement.appendChild(element.firstChild);
-        }
-
-        // Replace the old element with the new one
-        parent.replaceChild(newElement, element);
-
-        // Process the new element's children
-        for (let child of newElement.children) {
-            processElement(child);
-        }
-    }
-
-    // Start processing from the body element
-    processElement(document.body);
-});
-
 // Below defines the answers. Only correct buttons have correct answers.
 Answer = new Array("",
                   "","","","","5",   //Answers for 1 thru 5 buttons
