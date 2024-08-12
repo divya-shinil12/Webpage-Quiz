@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <TITLE>Practice Exercises</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js"></script>
+</HEAD>
+<BODY>
+<HR>
+    <FORM NAME="PE1" onReset="return confirm('Clear entries? Are you sure?')">
+      <STRONG>
+        <H1><CENTER>Logical Element Practice Exercises</CENTER></H1>
+        <PRE>NAME:  <INPUT TYPE="text" NAME="ID" SIZE=25></PRE>
+        <H3>
+          Enter the single best answer to each question below.
+        </H3>
+        <HR>
+        <P>
+        <B>Item 1:</B><BR>
+         What HTML logical element typically produces underlined text?<BR><BR>
+         <INPUT NAME="Q1" TYPE="RADIO" VALUE=1 CHECKED onClick="alert('Sorry, try again.');">No Response<BR>
+         <INPUT NAME="Q1" TYPE="RADIO" VALUE=2 onClick="alert('STRONG typically does not produce underlining. Please try again.');">STRONG <BR>
+         <INPUT NAME="Q1" TYPE="RADIO" VALUE=3 onClick="alert('Sorry, CITE is for citations.');">CITE<BR>
+         <INPUT NAME="Q1" TYPE="RADIO" VALUE=4 onClick="alert('U is not correct. It is a physical element.');">U<BR>
+         <INPUT NAME="Q1" TYPE="RADIO" VALUE=5 onClick="alert('None is correct, congratulations.');">None of the above<BR>
+         <BR>
+        <B>Item 2:</B><BR>
+         What HTML logical element typically produces italic text?<BR><BR>
+         <INPUT NAME="Q2" TYPE="RADIO" VALUE=1 CHECKED onClick="alert('Sorry, try again.');">No Response<BR>
+         <INPUT NAME="Q2" TYPE="RADIO" VALUE=2 onClick="alert('There is no ITALIC element, Sorry, try again.');">ITALIC <BR>
+         <INPUT NAME="Q2" TYPE="RADIO" VALUE=3 onClick="alert('Your response is incorrect. Please try again.');">I<BR>
+         <INPUT NAME="Q2" TYPE="RADIO" VALUE=4 onClick="alert('EM is correct. Congratulations.');">EM<BR>
+         <INPUT NAME="Q2" TYPE="RADIO" VALUE=5 onClick="alert('H1 produces the largest heading size. Try again.');">H1<BR>
+         <BR>
+        <B>Item 3:</B><BR>
+         What HTML logical element typically produces superscript text?<BR><BR>
+         <INPUT NAME="Q3" TYPE="RADIO" VALUE=1 CHECKED onClick="alert('Sorry, try again.');">No Response<BR>
+         <INPUT NAME="Q3" TYPE="RADIO" VALUE=2 onClick="alert('SUP is a physical element. Please try again.');">SUP<BR>
+         <INPUT NAME="Q3" TYPE="RADIO" VALUE=3 onClick="alert('SUB is a physical element. Please try again.');">SUB<BR>
+         <INPUT NAME="Q3" TYPE="RADIO" VALUE=4 onClick="alert('S is a physical element. Try again.');">S<BR>
+         <INPUT NAME="Q3" TYPE="RADIO" VALUE=5 onClick="alert('None of the above is correct.');">None of the above<BR>
+         <BR>
+         <HR>
+         <CENTER>
+         <INPUT TYPE="RESET" VALUE="Clear Entries"><BR><BR>
+         <INPUT TYPE="BUTTON" VALUE="Show Score" onClick="alert('Your score is '+computescore()+'%.');">
+         </CENTER>
+         </STRONG>
+    </FORM>
+</BODY>
+</HTML>
